@@ -41,6 +41,11 @@ function listening() {
     console.log(`Server running on localhost:${port}`);
 }
 
+/* Weather API */
+
+let baseURL = 'api.openweathermap.org'
+let apiKey = '835a7c7c37c90166525f435f5bc6c601'
+
 
 /* Routes */
 
