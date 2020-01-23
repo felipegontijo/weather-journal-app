@@ -41,9 +41,22 @@ function listening() {
     console.log(`Server running on localhost:${port}`);
 }
 
+
+/* Routes */
+
 // GET route
 app.get('/all', sendData);
 
 function sendData(request, response) {
     response.send(projectData);
+}
+
+// POST route
+app.post('/add', addData);
+
+function addData(request, response) {
+    projectData.push({ temperature: request.body.temperature,
+                        date: request.body.date,
+                        user: request.body.user
+    });
 }
