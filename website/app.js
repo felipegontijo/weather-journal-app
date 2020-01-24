@@ -8,7 +8,16 @@ let apiKey = '835a7c7c37c90166525f435f5bc6c601'
 /* Function called by event listener */
 
 /* Function to GET Web API Data*/
-
+const getApiData = async (url, element, key) => {
+    const res = await fetch(url+element+key);
+    try {
+        const data = await res.json();
+        console.log(data);
+        return data;
+    } catch (error) {
+        console.log('error', error);
+    }
+}
 
 /* Function to POST data */
 
