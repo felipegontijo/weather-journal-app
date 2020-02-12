@@ -3,6 +3,10 @@
 let baseURL = 'http://api.openweathermap.org/data/2.5/weather?zip='
 let apiKey = '&appid=835a7c7c37c90166525f435f5bc6c601'
 
+/* Generate new date in string format */
+const date = new Date();
+const dateString = date.toDateString();
+
 // Event listener to add function to existing HTML DOM element
 
 /* Function called by event listener */
