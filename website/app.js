@@ -58,6 +58,17 @@ const postData = async (url = '', data = {}) => {
     }
 }
 
+const updateUserInterface = async () => {
+    const requestedData = await getData('/all');
+    try {
+        document.getElementById('date').innerHTML = `Today is ${requestedData.date}`;
+        document.getElementById('temp').innerHTML = `The current temperature is ${requestedData.temp}`;
+        document.getElementById('content').innerHTML = `You are feeling ${requestedData.user}`;
+    } catch(error) {
+        console.log('error', error);
+    }
+}
+
 /* Function to GET Project Data */
 const getData = async (url = '') => {
     // make the request to the url
