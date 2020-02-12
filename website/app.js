@@ -8,9 +8,25 @@ const date = new Date();
 const dateString = date.toDateString();
 
 // Event listener to add function to existing HTML DOM element
-document.getElementById('generate').addEventListener('click', generateWeatherInformation)
+document.getElementById('generate').addEventListener('click', displayWeatherInformation)
 
 /* Function called by event listener */
+function displayWeatherInformation(event) {
+    event.preventDefault();
+
+    const inputZip = document.getElementById('zip').value;
+    const inputFeeling = document.getElementById('feelings').value;
+
+    getApiData(baseURL, inputZip, apiKey)
+    .then((data) => {
+        postData('/add', {
+            date: dateString,
+            temp: data.main.temp,
+            user: inputFeeling
+        })
+    })
+    .then(updateUserInterface());
+}
 
 /* Function to GET Web API Data*/
 const getApiData = async (url, element, key) => {
