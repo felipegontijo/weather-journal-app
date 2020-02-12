@@ -8,6 +8,7 @@ const date = new Date();
 const dateString = date.toDateString();
 
 // Event listener to add function to existing HTML DOM element
+document.getElementById('generate').addEventListener('click', generateWeatherInformation)
 
 /* Function called by event listener */
 
