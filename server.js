@@ -58,4 +58,5 @@ function addData(request, response) {
         temp: request.body.temp,
         user: request.body.user
     });
+    response.send('Data received and stored!');
 }
