@@ -27,11 +27,10 @@ app.use(cors());
 // Initialize the main project folder
 app.use(express.static('website'));
 
-
 /* Server Setup  */
 
 // Determine the Port
-const port = 3000;
+const port = 3030;
 
 // Spin up the server
 const server = app.listen(port, listening);
