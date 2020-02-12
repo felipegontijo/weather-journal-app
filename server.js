@@ -53,8 +53,9 @@ function sendData(request, response) {
 app.post('/add', addData);
 
 function addData(request, response) {
-    projectData.push({ temperature: request.body.temperature,
-                        date: request.body.date,
-                        user: request.body.user
+    Object.assign(projectData, {
+        date: request.body.date,
+        temp: request.body.temp,
+        user: request.body.user
     });
 }
