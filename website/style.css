@@ -13,7 +13,7 @@ body{
     justify-content: center;
     grid-gap: 0.5em;
     font-size: 20px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'OpenSans', sans-serif;
 }
 
 .holder{
@@ -25,7 +25,7 @@ body{
     display: block;
 }
 
-#journalEntry{
+#entryHolder{
 
 }
 
@@ -62,20 +62,20 @@ input{
     background:#22b2da;
     color: #f0d43a;
     font-size: 20px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'OpenSans', sans-serif;
     border: none;
 }
 
 button{
     display: block;
     width: 150px;
-    height: 80px;
+    height: 100px;
     background: #3b4a6b;
     color: #f0d43a;
     font-size: 20px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'OpenSans', sans-serif;
     border: none;
-    box-shadow: 2px 4px 5px #444;
+    box-shadow: 2px 3px 4px #444;
 }
 h1{
     font-size: 44px;
@@ -85,7 +85,7 @@ textarea{
     background:#22b2da;
     color: #f0d43a;
     font-size: 20px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'OpenSans', sans-serif;
 }
 /* Reset style for HTML element on active to have no border*/
 input:focus,
@@ -97,18 +97,18 @@ button:focus {
 /* Style for Placeholder Text*/
 ::placeholder { /* Firefox, Chrome, Opera */
     color: #f0d43a;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'OpenSans', sans-serif;
 
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: #f0d43a;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'OpenSans', sans-serif;
 
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
     color: #f0d43a;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'OpenSans', sans-serif;
 
 }
