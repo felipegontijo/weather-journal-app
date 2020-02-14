@@ -6,10 +6,7 @@ body{
 #app{
     display: grid;
     grid-template-rows: 100px 100px 100px 100px;
-    /* grid-template-columns: 150px 150px 150px; */
     grid-auto-columns: minmax(300px, auto);
-    /* grid-auto-rows: minmax(150px, auto); */
-    /* grid-template-columns:  */
     height:100vh;
     background: #f23557;
     color: #f0d43a;
@@ -28,7 +25,7 @@ body{
     display: block;
 }
 
-#journalHolder{
+#journalEntry{
 
 }
 
@@ -47,6 +44,7 @@ body{
 .headline {
 
 }
+
 .title{
     font-size: 27px;
 }
